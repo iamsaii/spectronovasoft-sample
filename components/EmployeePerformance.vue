@@ -17,7 +17,6 @@
       </button>
     </div>
 
-    <!-- Legend -->
     <div class="flex gap-4 mb-6">
       <div v-for="metric in metrics" :key="metric.name" class="flex items-center gap-2">
         <div class="w-3 h-3 rounded-full" :class="metric.color" />
@@ -25,7 +24,6 @@
       </div>
     </div>
 
-    <!-- Employee Bars -->
     <div class="space-y-6">
       <div v-for="employee in employees" :key="employee.name">
         <div class="flex justify-between items-center">
@@ -54,7 +52,7 @@ const props = defineProps({
   }
 })
 
-const maxValue = 40 // Maximum value from the design
+const maxValue = 40 
 
 const metrics = ref([
   { name: 'Task completed', key: 'tasks', color: 'bg-purple-500' },

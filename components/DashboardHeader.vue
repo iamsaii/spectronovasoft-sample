@@ -20,11 +20,11 @@
           </svg>
         </div>
         <div>
-          <!-- <img
-            src="/path-to-avatar.jpg"
+          <img
+            src="/spectro.png"
             alt="User Avatar"
             class="w-10 h-10 rounded-full"
-          /> -->
+          />
         </div>
       </div>
     </header>

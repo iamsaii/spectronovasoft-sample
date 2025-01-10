@@ -8,26 +8,21 @@
       </div>
     </div>
 
-    <!-- Progress Bar Container -->
     <div class="relative h-3 w-full rounded-full overflow-hidden bg-gray-100">
-      <!-- On Time - Purple -->
       <div 
         class="absolute left-0 top-0 h-full bg-purple-500 transition-all duration-300"
         :style="{ width: `${onTimePercentage}%` }"
       />
-      <!-- Day Off - Light Blue -->
       <div 
         class="absolute left-0 top-0 h-full bg-blue-400 transition-all duration-300"
         :style="{ width: `${dayOffPercentage}%` }"
       />
-      <!-- Sick Leave - Yellow -->
       <div 
         class="absolute left-0 top-0 h-full bg-yellow-400 transition-all duration-300"
         :style="{ width: `${sickLeavePercentage}%` }"
       />
     </div>
 
-    <!-- Legend -->
     <div class="flex items-center space-x-6 mt-4">
       <div class="flex items-center space-x-2">
         <div class="w-3 h-3 rounded-full bg-yellow-400" />

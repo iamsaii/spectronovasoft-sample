@@ -1,7 +1,7 @@
 <template>
    <aside class="w-64 bg-gray-100 h-screen p-6">
   <div class="flex items-center mb-8">
-    <!-- <img src="/path-to-logo.png" alt="Logo" class="w-10 h-10 mr-3" /> -->
+    <img src="/spectro.png" alt="Logo" class="w-10 h-10 mr-3" />
     <h1 class="text-lg font-semibold">TurHR</h1>
   </div>
   <nav>

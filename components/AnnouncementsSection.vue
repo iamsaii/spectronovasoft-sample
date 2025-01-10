@@ -6,13 +6,13 @@
           <h4 class="font-medium">Stay updated with TurHR</h4>
           <p class="text-gray-600 text-sm">Create New</p>
           <div class="flex mt-3">
-            <!-- <img
+            <img
               v-for="avatar in avatars"
               :key="avatar"
               :src="avatar"
               alt="Avatar"
               class="w-8 h-8 rounded-full border-2 border-white -ml-2"
-            /> -->
+            />
             <div class="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center -ml-2">
               +10
             </div>
@@ -24,9 +24,9 @@
   
   <script setup>
   const avatars = [
-    '',
-    '',
-    '',
+    '/spectro.png',
+    '/spectro.png',
+    '/spectro.png',
   ]
   </script>
   

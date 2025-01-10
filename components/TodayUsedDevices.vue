@@ -9,9 +9,7 @@
       </button>
     </div>
 
-    <!-- Gauge Chart Component -->
     <div class="relative w-32 h-16 mx-auto">
-      <!-- Background Arc -->
       <div class="absolute w-full h-full">
         <svg viewBox="0 0 100 50" class="w-full h-full">
           <path
@@ -24,7 +22,6 @@
         </svg>
       </div>
       
-      <!-- Foreground Arc -->
       <div class="absolute w-full h-full" :style="{ transform: `rotate(${-90}deg)` }">
         <svg viewBox="0 0 100 50" class="w-full h-full">
           <path
@@ -40,18 +37,15 @@
         </svg>
       </div>
       
-      <!-- Center Value -->
       <div class="absolute inset-0 flex items-center justify-center mt-4">
         <span class="text-2xl font-semibold">{{ value }}</span>
       </div>
       
-      <!-- Overall Label -->
       <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
         <span class="text-sm text-gray-500">Overall</span>
       </div>
     </div>
 
-    <!-- Devices List -->
     <div class="mt-6 space-y-3">
       <div v-for="device in devices" :key="device.name" class="flex items-center justify-between">
         <div class="flex items-center space-x-2">

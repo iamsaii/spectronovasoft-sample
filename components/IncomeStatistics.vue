@@ -7,7 +7,6 @@
       </button>
     </div>
 
-    <!-- Current Month Stats -->
     <div class="mb-6 flex items-center gap-4">
       <div class="flex items-center gap-2">
         <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center">
@@ -31,7 +30,6 @@
       </div>
     </div>
 
-    <!-- Chart -->
     <div class="h-64">
       <apexchart
         type="bar"

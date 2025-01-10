@@ -7,9 +7,6 @@ import TodayUsedDevices from '~/components/TodayUsedDevices.vue';
 import TotalEmployees from '~/components/TotalEmployees.vue';
 
 </script>
-
-
-
 <template>
    <div class="content flex-1 p-4">
     <div class="header flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -36,4 +33,4 @@ import TotalEmployees from '~/components/TotalEmployees.vue';
     </section>
     <EmployeeList class="mt-4" />
   </div>
-    </template>
+</template>

@@ -10,7 +10,6 @@
       </div>
   
       <div class="space-y-4">
-        <!-- Fulltime Employees -->
         <div class="flex justify-between items-center">
           <div class="flex items-center space-x-2">
             <span class="text-2xl font-semibold">150</span>
@@ -19,7 +18,6 @@
           <span class="text-gray-500 text-sm">Fulltime Employee</span>
         </div>
   
-        <!-- Freelance Employees -->
         <div class="flex justify-between items-center">
           <div class="flex items-center space-x-2">
             <span class="text-2xl font-semibold">50</span>
