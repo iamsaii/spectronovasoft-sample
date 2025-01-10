@@ -33,7 +33,7 @@
 
     <!-- Chart -->
     <div class="h-64">
-      <VueApexCharts
+      <apexchart
         type="bar"
         height="100%"
         :options="chartOptions"

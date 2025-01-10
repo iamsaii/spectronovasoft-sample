@@ -36,7 +36,6 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue'
   
   const employees = ref([
     { id: 'TUR871219', name: 'Ahsan Tapadar', email: 'ahsan.t@mall.com', role: 'Sr UI/UX Designer', department: 'Team Projects', status: 'Full-time' },

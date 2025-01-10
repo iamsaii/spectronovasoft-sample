@@ -24,9 +24,9 @@
   
   <script setup>
   const avatars = [
-    '/path-to-avatar1.jpg',
-    '/path-to-avatar2.jpg',
-    '/path-to-avatar3.jpg',
+    '',
+    '',
+    '',
   ]
   </script>
   

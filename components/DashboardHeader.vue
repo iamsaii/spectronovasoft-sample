@@ -1,7 +1,7 @@
 <template>
     <header class="flex justify-between items-center py-4">
       <div>
-        <h2 class="text-2xl font-bold">Good Morning, Turja Sen</h2>
+        <h2 class="text-2xl font-bold">Good Morning, Sai</h2>
       </div>
       <div class="flex items-center space-x-4">
         <div class="relative">

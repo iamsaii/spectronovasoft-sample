@@ -31,6 +31,3 @@
     </div>
   </template>
   
-  <script setup>
-  // You can add props or other logic here if needed
-  </script>
