@@ -12,7 +12,12 @@
       </div>
       <button class="text-gray-400 hover:text-gray-600">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+          />
         </svg>
       </button>
     </div>
@@ -31,8 +36,8 @@
           <span class="text-sm text-gray-400">{{ getTotalScore(employee) }}</span>
         </div>
         <div class="flex items-center gap-2 mt-2">
-          <div 
-            v-for="(metric, index) in metrics" 
+          <div
+            v-for="(metric, index) in metrics"
             :key="index"
             class="h-2 rounded-full transition-all duration-300"
             :class="metric.color"
@@ -48,16 +53,16 @@
 const props = defineProps({
   overallPerformance: {
     type: Number,
-    default: 98
-  }
+    default: 98,
+  },
 })
 
-const maxValue = 40 
+const maxValue = 40
 
 const metrics = ref([
   { name: 'Task completed', key: 'tasks', color: 'bg-purple-500' },
   { name: 'Presence', key: 'presence', color: 'bg-blue-400' },
-  { name: 'Completed Meeting', key: 'meetings', color: 'bg-teal-500' }
+  { name: 'Completed Meeting', key: 'meetings', color: 'bg-teal-500' },
 ])
 
 const employees = ref([
@@ -65,32 +70,32 @@ const employees = ref([
     name: 'Ahsan Tapadar',
     tasks: 15,
     presence: 12,
-    meetings: 8
+    meetings: 8,
   },
   {
     name: 'Koyes Ahmed',
     tasks: 18,
     presence: 10,
-    meetings: 7
+    meetings: 7,
   },
   {
     name: 'Washi Bin M.',
     tasks: 25,
     presence: 8,
-    meetings: 5
+    meetings: 5,
   },
   {
     name: 'Mir Muhsin',
     tasks: 12,
     presence: 15,
-    meetings: 10
+    meetings: 10,
   },
   {
     name: 'Turja Sen Das',
     tasks: 20,
     presence: 10,
-    meetings: 8
-  }
+    meetings: 8,
+  },
 ])
 
 const getWidth = (value) => `${(value / maxValue) * 100}%`

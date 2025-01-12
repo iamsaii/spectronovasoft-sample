@@ -9,15 +9,15 @@
     </div>
 
     <div class="relative h-3 w-full rounded-full overflow-hidden bg-gray-100">
-      <div 
+      <div
         class="absolute left-0 top-0 h-full bg-purple-500 transition-all duration-300"
         :style="{ width: `${onTimePercentage}%` }"
       />
-      <div 
+      <div
         class="absolute left-0 top-0 h-full bg-blue-400 transition-all duration-300"
         :style="{ width: `${dayOffPercentage}%` }"
       />
-      <div 
+      <div
         class="absolute left-0 top-0 h-full bg-yellow-400 transition-all duration-300"
         :style="{ width: `${sickLeavePercentage}%` }"
       />
@@ -44,23 +44,23 @@
 const props = defineProps({
   percentage: {
     type: Number,
-    default: 90
+    default: 90,
   },
   improvement: {
     type: String,
-    default: '+20%'
+    default: '+20%',
   },
   onTimePercentage: {
     type: Number,
-    default: 60
+    default: 60,
   },
   dayOffPercentage: {
     type: Number,
-    default: 25
+    default: 25,
   },
   sickLeavePercentage: {
     type: Number,
-    default: 5
-  }
+    default: 5,
+  },
 })
 </script>

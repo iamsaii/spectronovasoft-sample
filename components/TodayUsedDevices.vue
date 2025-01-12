@@ -4,7 +4,12 @@
       <h3 class="font-medium text-gray-900">Today Used Devices</h3>
       <button class="text-gray-400 hover:text-gray-600">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+          />
         </svg>
       </button>
     </div>
@@ -12,16 +17,10 @@
     <div class="relative w-32 h-16 mx-auto">
       <div class="absolute w-full h-full">
         <svg viewBox="0 0 100 50" class="w-full h-full">
-          <path
-            d="M 10 45 A 35 35 0 0 1 90 45"
-            fill="none"
-            stroke="#e5e7eb"
-            stroke-width="8"
-            stroke-linecap="round"
-          />
+          <path d="M 10 45 A 35 35 0 0 1 90 45" fill="none" stroke="#e5e7eb" stroke-width="8" stroke-linecap="round" />
         </svg>
       </div>
-      
+
       <div class="absolute w-full h-full" :style="{ transform: `rotate(${-90}deg)` }">
         <svg viewBox="0 0 100 50" class="w-full h-full">
           <path
@@ -31,16 +30,16 @@
             stroke-width="8"
             stroke-linecap="round"
             stroke-dasharray="126"
-            :stroke-dashoffset="126 - (126 * value / 100)"
+            :stroke-dashoffset="126 - (126 * value) / 100"
             transform="rotate(180, 50, 45)"
           />
         </svg>
       </div>
-      
+
       <div class="absolute inset-0 flex items-center justify-center mt-4">
         <span class="text-2xl font-semibold">{{ value }}</span>
       </div>
-      
+
       <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
         <span class="text-sm text-gray-500">Overall</span>
       </div>
@@ -62,13 +61,13 @@
 const props = defineProps({
   value: {
     type: Number,
-    default: 100
-  }
+    default: 100,
+  },
 })
 
 const devices = ref([
   { name: 'Macbook', count: 80, color: 'bg-blue-500' },
   { name: 'Keyboard', count: 13, color: 'bg-yellow-500' },
-  { name: 'Headphones', count: 7, color: 'bg-purple-500' }
+  { name: 'Headphones', count: 7, color: 'bg-purple-500' },
 ])
 </script>
