@@ -1,5 +1,4 @@
 {
-    "recommendations": ["vue.volar", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
-    "unwantedRecommendations": ["vscode.typescript-language-features"]
-  }
-  
+  "recommendations": ["vue.volar", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+  "unwantedRecommendations": ["vscode.typescript-language-features"]
+}
